@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ca31b786-aac2-445a-ad96-109d8d274b2c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 4" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="fda8b39e-3f5f-4f74-ad09-c66465089284"><con:setting id="ca31b786-aac2-445a-ad96-109d8d274b2cfileName">Test-Case-4</con:setting></con:settings>
+      <con:testStep type="httprequest" name="GET joke" id="f39c1ad5-995a-4e3b-81a3-8a0d696fabe4">
+        <con:settings/>
+        <con:config method="GET" xsi:type="con:HttpRequest" id="27a40d94-047f-48ca-a354-780b3fccd992" name="GET joke" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://catfact.ninja/fact</con:endpoint>
+          <con:request/>
+          <con:assertion type="Valid HTTP Status Codes" id="d5585e4b-5e75-4efe-9cd6-8c422834f6ea" name="Valid HTTP Status Codes">
+            <con:settings/>
+            <con:configuration>
+              <codes>200</codes>
+            </con:configuration>
+          </con:assertion>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
